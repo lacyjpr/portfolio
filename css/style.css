@@ -18,3 +18,21 @@ header:hover svg#logo {
   -webkit-filter: drop-shadow(3px 3px 3px #ddd);
   filter: drop-shadow(3px 3px 3px #ddd);
 }
+
+@media screen and (max-width: 400px) {
+	body {
+		background-color: red;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 599px) {
+	body {
+		background-color: green;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		background-color: blue;
+	}
+}
