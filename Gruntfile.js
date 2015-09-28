@@ -48,11 +48,11 @@ module.exports = function(grunt) {
     },
 
     /* Clear out the images directory if it exists */
-    // clean: {
-    //   dev: {
-    //     src: ['images'],
-    //   },
-    // },
+    clean: {
+      dev: {
+        src: ['images'],
+      },
+    },
 
     /* Generate the images directory if it is missing */
     mkdir: {
