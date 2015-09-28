@@ -3,40 +3,50 @@
 	outline: 1px solid red !important;
 }
 
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+header {
+	margin-top: 40px;
+}
+
+hr {
+	height: 4px;
+	background-color: #bcbbbb;
+	color: #bcbbbb;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
 
+/*p {
+	text-align: center;
+}*/
 
 svg#logo {
-  fill: #666;
-  height: 11vw;
-  margin: 0 auto 0.5em auto;
-  width: 11vw;
+	height: 11vw;
+	width: 11vw;
 }
 
-header:hover svg#logo {
-  fill: #3d85c6;
-  -webkit-filter: drop-shadow(3px 3px 3px #ddd);
-  filter: drop-shadow(3px 3px 3px #ddd);
+hover svg#logo {
+	-webkit-filter: drop-shadow(5px 5px 5px #ddd);
+	filter: drop-shadow(5px 5px 5px #ddd);
 }
 
-@media screen and (max-width: 400px) {
-	body {
-		background-color: red;
-	}
+.text-muted {
+	color: #bcbbbb;
 }
 
-@media screen and (min-width: 401px) and (max-width: 599px) {
-	body {
-		background-color: green;
-	}
+.text-thin {
+	font-weight: 100;
 }
 
-@media screen and (min-width: 600px) {
-	body {
-		background-color: blue;
-	}
+.title-super {
+	font-size: 60px;
 }
