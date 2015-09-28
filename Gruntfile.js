@@ -15,22 +15,22 @@ module.exports = function(grunt) {
           engine: 'im',
           sizes: [{
             name: "small",
-            width: 320,
-            quality: 30
+            width: 360,
+            quality: 40
             },{
             name: "medium",
+            width: 480,
+            quality: 40
+            },{
+            name: "large",
             width: 640,
-            quality: 30
+            suffix: "_1x",
+            quality: 40
             },{
             name: "large",
             width: 800,
-            suffix: "_large_1x",
-            quality: 30
-            },{
-            name: "large",
-            width: 1600,
-            suffix: '_large_2x',
-            quality: 30
+            suffix: '_2x',
+            quality: 40
           }]
         },
 
@@ -48,11 +48,11 @@ module.exports = function(grunt) {
     },
 
     /* Clear out the images directory if it exists */
-    clean: {
-      dev: {
-        src: ['images'],
-      },
-    },
+    // clean: {
+    //   dev: {
+    //     src: ['images'],
+    //   },
+    // },
 
     /* Generate the images directory if it is missing */
     mkdir: {
