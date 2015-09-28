@@ -13,6 +13,10 @@ header {
 	margin-top: 40px;
 }
 
+h3 {
+	font-size: 28px;
+}
+
 hr {
 	height: 4px;
 	background-color: #bcbbbb;
@@ -34,7 +38,7 @@ svg#logo {
 	width: 11vw;
 }
 
-hover svg#logo {
+header:hover svg#logo {
 	-webkit-filter: drop-shadow(5px 5px 5px #ddd);
 	filter: drop-shadow(5px 5px 5px #ddd);
 }
