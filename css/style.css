@@ -38,7 +38,7 @@ svg#logo {
 	width: 11vw;
 }
 
-/*Works, but wont validate
+/*Wont validate, works
 header:hover svg#logo {
 	-webkit-filter: drop-shadow(5px 5px 5px #ddd);
 	filter: drop-shadow(5px 5px 5px #ddd);
