@@ -4,3 +4,5 @@ art/
 images_src/
 node_modules/
 web.config
+Gruntfile.js
+package.json
