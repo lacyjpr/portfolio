@@ -56,9 +56,9 @@
 						<div class="container-fluid">
 							<ul class="nav navbar-nav">
 								<li><a href="#1">Resume</a></li>
-								<li><a href="#2">Arcade</a></li>
+								<li><a href="#2">Arcade Game</a></li>
 								<li><a href="#3">Optimization</a></li>
-								<li><a href="#4">Neighborhood Map</a></li>
+								<li><a href="#4">Neighborhood</a></li>
 								<li><a href="#5">Health Tracker</a></li>
 								<li><a href="#6">Feed Reader Testing</a></li>
 							</ul>
@@ -68,6 +68,8 @@
 			</div><!--row-->
 
 		</header>
+
+		<main>
 
 			<div class="row">
 				<div class="col-md-12">
@@ -80,7 +82,8 @@
 					<picture>
 						<source media="(min-width: 1200px)" class="center-block" srcset="images/suspension_bridge-large_2x.jpg 2x, images/suspension_bridge-large_1x.jpg 1x">
 						<source media="(min-width: 992px)" class="center-block" srcset="images/suspension_bridge-medium.jpg">
-						<img src="images/suspension_bridge-small.jpg" alt="suspension bridge">
+						<source media="(max-width: 768px)" class="center-block" srcset="images/suspension_bridge-small.jpg">
+						<img src="images/suspension_bridge-large_1x.jpg" alt="suspension bridge"><!--large image here for ie-->
 					</picture>
 				</div>
 			</div><!--row-->
@@ -173,9 +176,11 @@
 
 			</div><!--row-->
 
+		</main>
+
 		</div><!--container-->
 
-<!-- Modal -->
+		<!-- Modal -->
 		<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -184,7 +189,7 @@
 					</div>
 					<div class="modal-body">
 						<img class="img-responsive" src="images/resume-small.jpg" alt="job hunters in suits">
-						From this project, I learned a lot about JavaScript and jQuery.
+						This project taught me a lot about JavaScript and jQuery.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -193,7 +198,7 @@
 			</div>
 		</div>
 
-<!-- Modal -->
+		<!-- Modal -->
 		<div class="modal fade" id="arcade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -202,7 +207,7 @@
 					</div>
 					<div class="modal-body">
 						<img class="img-responsive" src="images/arcade-small.jpg" alt="classic arcade game machine">
-						From this project, I learned a lot about Object-Oriented JavaScript and HTML5 Canvas.
+						This project taught me a lot about Object-Oriented JavaScript and HTML5 Canvas.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -211,7 +216,7 @@
 			</div>
 		</div>
 
-<!-- Modal -->
+		<!-- Modal -->
 		<div class="modal fade" id="optimization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -220,7 +225,7 @@
 					</div>
 					<div class="modal-body">
 						<img class="img-responsive" src="images/optimization-small.jpg" alt="man using a tablet device">
-						From this project, I learned a lot about website performance optimization and browser rendering optimization.
+						This project taught me a lot about website performance optimization and browser rendering optimization.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -229,7 +234,7 @@
 			</div>
 		</div>
 
-<!-- Modal -->
+		<!-- Modal -->
 		<div class="modal fade" id="neighborhood" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -238,7 +243,7 @@
 					</div>
 					<div class="modal-body">
 						<img class="img-responsive" src="images/neighborhood-small.jpg" alt="city skyline">
-						From this project, I learned a lot about third-party APIs, AJAX, and JavaScript design patterns.
+						This project taught me a lot about third-party APIs, AJAX, and JavaScript design patterns.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -247,7 +252,7 @@
 			</div>
 		</div>
 
-<!-- Modal -->
+		<!-- Modal -->
 		<div class="modal fade" id="health" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -256,7 +261,7 @@
 					</div>
 					<div class="modal-body">
 						<img class="img-responsive" src="images/health-small.jpg" alt="man on a bicycle">
-						From this project, I learned a lot about Backbone.js.
+						This project taught me a lot about Backbone.js.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -265,7 +270,7 @@
 			</div>
 		</div>
 
-<!-- Modal -->
+		<!-- Modal -->
 		<div class="modal fade" id="testing" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -274,7 +279,7 @@
 					</div>
 					<div class="modal-body">
 						<img class="img-responsive" src="images/testing-small.jpg" alt="woman with multiple computer monitors">
-						From this project, I learned a lot about JavaScrip testing and Test Driven Development.
+						This project taught me a lot about JavaScript testing and Test Driven Development.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -282,6 +287,7 @@
 				</div>
 			</div>
 		</div>
+
 	</body>
 
 
