@@ -5,20 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Jean-Paul Lacy: Portfolio</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	</head>
 	<body>
+
 		<div class="container">
 
 		<header>
-
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-2">
 					<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
 					<title>"Sun Logo"</title>
 					<path style="fill:#F8981C" d="M50,50v412h412V50H50z M67.167,67.167H256v60.938c0,16.001,9.874,23.294,19.044,23.294
@@ -44,11 +44,24 @@
 						c-5.448,5.725-7.796,7.276-7.796-1.869V67.167h171.667V256H401.062z"/>
 					</svg>
 				</div>
-				<div class="col-md-6 text-right text-uppercase">
+				<div class="col-md-10 text-right text-uppercase">
 					<h1 class="title-super text-thin">Jean-Paul Lacy</h1>
 					<h4>Front-end Developer</h4>
 				</div>
 			</div>
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Resume</a></li>
+						<li><a href="#">Arcade Game</a></li>
+						<li><a href="#">Website Optimization</a></li>
+						<li><a href="#">Neighborhood</a></li>
+						<li><a href="#">Health Tracker</a></li>
+						<li><a href="#">Feed Reader Testing</a></li>
+					</ul>
+				</div>
+			</nav>
 
 		</header>
 
@@ -68,74 +81,97 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="text-muted">Featured Work</h2>
+			<section>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-muted">Featured Work</h2>
+					</div>
 				</div>
+			</section>
+
+			<div class="row text-center">
+
+				<section>
+					<div class="col-md-4">
+						<picture>
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/resume-large_2x.jpg 2x, images/resume-large_1x.jpg 1x">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/resume-medium.jpg">
+							<img class="center-block" src="images/resume-small.jpg" alt="job hunters in suits">
+						</picture>
+						<h3 class="text-uppercase">Resume</h3>
+						<p>https://github.com/lacyjpr/resume</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="col-md-4">
+						<picture>
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/arcade-large_2x.jpg 2x, images/arcade-large_1x.jpg 1x">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/arcade-medium.jpg">
+							<img class="center-block" src="images/arcade-small.jpg" alt="classic arcade game machine">
+						</picture>
+						<h3 class="text-uppercase">Arcade Game</h3>
+						<p>https://github.com/lacyjpr/arcade</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="col-md-4">
+						<picture>
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/optimization-large_2x.jpg 2x, images/optimization-large_1x.jpg 1x">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/optimization-medium.jpg">
+							<img class="center-block" src="images/optimization-small.jpg" alt="man using a tablet device">
+						</picture>
+						<h3 class="text-uppercase">Website Optimization</h3>
+						<p>https://github.com/lacyjpr/optimization</p>
+					</div>
+				</section>
+
 			</div>
 
 			<div class="row text-center">
-				<div class="col-md-4">
-					<picture>
-						<source media="(min-width: 1200px)" class="center-block" srcset="images/resume-large_2x.jpg 2x, images/resume-large_1x.jpg 1x">
-						<source media="(min-width: 992px)" class="center-block" srcset="images/resume-medium.jpg">
-						<img class="center-block" src="images/resume-small.jpg" alt="job hunters in suits">
-					</picture>
-					<h3 class="text-uppercase">Resume</h3>
-					<p>https://github.com/lacyjpr/portfolio</p>
-				</div>
-				<div class="col-md-4">
-					<picture>
-						<source media="(min-width: 1200px)" class="center-block" srcset="images/arcade-large_2x.jpg 2x, images/arcade-large_1x.jpg 1x">
-						<source media="(min-width: 992px)" class="center-block" srcset="images/arcade-medium.jpg">
-						<img class="center-block" src="images/arcade-small.jpg" alt="classic arcade game machine">
-					</picture>
-					<h3 class="text-uppercase">Arcade Game</h3>
-					<p>https://github.com/lacyjpr/arcade</p>
-				</div>
-				<div class="col-md-4">
-					<picture>
-						<source media="(min-width: 1200px)" class="center-block" srcset="images/optimization-large_2x.jpg 2x, images/optimization-large_1x.jpg 1x">
-						<source media="(min-width: 992px)" class="center-block" srcset="images/optimization-medium.jpg">
-						<img class="center-block" src="images/optimization-small.jpg" alt="man using a tablet device">
-					</picture>
-					<h3 class="text-uppercase">Website Optimization</h3>
-					<p>https://github.com/lacyjpr/optimization</p>
-				</div>
-			</div>
 
-			<div class="row text-center">
-				<div class="col-md-4">
-					<picture>
-						<source media="(min-width: 1200px)" class="center-block" srcset="images/neighborhood-large_2x.jpg 2x, images/neighborhood-large_1x.jpg 1x">
-						<source media="(min-width: 992px)" class="center-block" srcset="images/neighborhood-medium.jpg">
-						<img class="center-block" src="images/neighborhood-small.jpg" alt="city skyline">
-					</picture>
-					<h3 class="text-uppercase">Neighborhood Map</h3>
-					<p>https://github.com/lacyjpr/neighborhood</p>
-				</div>
-				<div class="col-md-4">
-					<picture>
-						<source media="(min-width: 1200px)" class="center-block" srcset="images/health-large_2x.jpg 2x, images/health-large_1x.jpg 1x">
-						<source media="(min-width: 992px)" class="center-block" srcset="images/health-medium.jpg">
-						<img class="center-block" src="images/health-small.jpg" alt="man on a bicycle">
-					</picture>
-					<h3 class="text-uppercase">Health Tracker</h3>
-					<p>https://github.com/lacyjpr/arcade</p>
-				</div>
-				<div class="col-md-4">
-					<picture>
-						<source media="(min-width: 1200px)" class="center-block" srcset="images/testing-large_2x.jpg 2x, images/testing-large_1x.jpg 1x">
-						<source media="(min-width: 992px)" class="center-block" srcset="images/testing-medium.jpg">
-						<img class="center-block" src="images/testing-small.jpg" alt="woman with multiple computer monitors">
-					</picture>
-					<h3 class="text-uppercase">Feed Reader Testing</h3>
-					<p>https://github.com/lacyjpr/testing</p>
-				</div>
+				<section>
+					<div class="col-md-4">
+						<picture>
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/neighborhood-large_2x.jpg 2x, images/neighborhood-large_1x.jpg 1x">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/neighborhood-medium.jpg">
+							<img class="center-block" src="images/neighborhood-small.jpg" alt="city skyline">
+						</picture>
+						<h3 class="text-uppercase">Neighborhood Map</h3>
+						<p>https://github.com/lacyjpr/neighborhood</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="col-md-4">
+						<picture>
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/health-large_2x.jpg 2x, images/health-large_1x.jpg 1x">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/health-medium.jpg">
+							<img class="center-block" src="images/health-small.jpg" alt="man on a bicycle">
+						</picture>
+						<h3 class="text-uppercase">Health Tracker</h3>
+						<p>https://github.com/lacyjpr/arcade</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="col-md-4">
+						<picture>
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/testing-large_2x.jpg 2x, images/testing-large_1x.jpg 1x">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/testing-medium.jpg">
+							<img class="center-block" src="images/testing-small.jpg" alt="woman with multiple computer monitors">
+						</picture>
+						<h3 class="text-uppercase">Feed Reader Testing</h3>
+						<p>https://github.com/lacyjpr/testing</p>
+					</div>
+				</section>
+
 			</div>
 
 		</div><!--container-->
 	</body>
+
 
 </html>
 
