@@ -10,6 +10,11 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/picturefill.min.js" async></script>
+		<script>
+			// Picture element HTML5 shiv
+			document.createElement( "picture" );
+		</script>
 
 	</head>
 	<body>
@@ -54,14 +59,23 @@
 				<div class="col-md-12">
 					<nav class="navbar navbar-default">
 						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="navigation">
 							<ul class="nav navbar-nav">
 								<li><a href="#1">Resume</a></li>
 								<li><a href="#2">Arcade Game</a></li>
 								<li><a href="#3">Optimization</a></li>
 								<li><a href="#4">Neighborhood</a></li>
-								<li><a href="#5">Health Tracker</a></li>
+								<li><a href="#5">Health Tracking</a></li>
 								<li><a href="#6">Feed Reader Testing</a></li>
 							</ul>
+							</div><!--collapse navbar-collapse-->
 						</div><!--container-fluid-->
 					</nav>
 				</div><!--col-->
@@ -93,7 +107,7 @@
 					<div class="col-md-12">
 						<h2 class="text-muted">Featured Work</h2>
 					</div>
-				</div>
+				</div><!--row-->
 			</section>
 
 			<div class="row text-center">
@@ -107,7 +121,7 @@
 						</picture>
 						<h3 class="text-uppercase">Resume</h3>
 						<p>https://github.com/lacyjpr/resume</p>
-					</div>
+					</div><!--col-->
 				</section>
 
 				<section>
@@ -119,7 +133,7 @@
 						</picture>
 						<h3 class="text-uppercase">Arcade Game</h3>
 						<p>https://github.com/lacyjpr/arcade</p>
-					</div>
+					</div><!--col-->
 				</section>
 
 				<section>
@@ -131,7 +145,7 @@
 						</picture>
 						<h3 class="text-uppercase">Website Optimization</h3>
 						<p>https://github.com/lacyjpr/optimization</p>
-					</div>
+					</div><!--col-->
 				</section>
 
 			</div><!--row-->
@@ -147,7 +161,7 @@
 						</picture>
 						<h3 class="text-uppercase">Neighborhood Map</h3>
 						<p>https://github.com/lacyjpr/neighborhood</p>
-					</div>
+					</div><!--col-->
 				</section>
 
 				<section>
@@ -159,7 +173,7 @@
 						</picture>
 						<h3 class="text-uppercase">Health Tracker</h3>
 						<p>https://github.com/lacyjpr/arcade</p>
-					</div>
+					</div><!--col-->
 				</section>
 
 				<section>
@@ -171,7 +185,7 @@
 						</picture>
 						<h3 class="text-uppercase">Feed Reader Testing</h3>
 						<p>https://github.com/lacyjpr/testing</p>
-					</div>
+					</div><!--col-->
 				</section>
 
 			</div><!--row-->
@@ -194,9 +208,9 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!--modal-content-->
+			</div><!--modal-dialog-->
+		</div><!--modal-->
 
 		<!-- Modal -->
 		<div class="modal fade" id="arcade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -212,9 +226,9 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!--modal-content-->
+			</div><!--modal-dialog-->
+		</div><!--modal-->
 
 		<!-- Modal -->
 		<div class="modal fade" id="optimization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -230,9 +244,9 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!--modal-content-->
+			</div><!--modal-dialog-->
+		</div><!--modal-->
 
 		<!-- Modal -->
 		<div class="modal fade" id="neighborhood" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -248,9 +262,9 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!--modal-content-->
+			</div><!--modal-dialog-->
+		</div><!--modal-->
 
 		<!-- Modal -->
 		<div class="modal fade" id="health" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -266,9 +280,9 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!--modal-content-->
+			</div><!--modal-dialog-->
+		</div><!--modal-->
 
 		<!-- Modal -->
 		<div class="modal fade" id="testing" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -284,9 +298,9 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!--modal-content-->
+			</div><!--modal-dialog-->
+		</div><!--modal-->
 
 	</body>
 
