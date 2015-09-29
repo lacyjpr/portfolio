@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Jean-Paul Lacy: Portfolio</title>
 		<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -20,7 +20,7 @@
 			<div class="row">
 				<div class="col-md-2">
 					<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
-					<title>"Sun Logo"</title>
+					<title>"Puzzle Logo"</title>
 					<path style="fill:#F8981C" d="M50,50v412h412V50H50z M67.167,67.167H256v60.938c0,16.001,9.874,23.294,19.044,23.294
 						c5.7,0,11.534-2.674,16.362-7.519c4.861-5.08,6.672-8.047,13.479-8.047c8.08,0,19.781,9.17,19.781,25.75
 						c0,16.58-11.701,25.75-19.781,25.75c-6.807,0-8.6-2.967-13.479-8.039c-4.828-4.854-10.662-7.527-16.362-7.527
@@ -48,20 +48,24 @@
 					<h1 class="title-super text-thin">Jean-Paul Lacy</h1>
 					<h4>Front-end Developer</h4>
 				</div>
-			</div>
+			</div><!--row-->
 
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Resume</a></li>
-						<li><a href="#">Arcade Game</a></li>
-						<li><a href="#">Website Optimization</a></li>
-						<li><a href="#">Neighborhood</a></li>
-						<li><a href="#">Health Tracker</a></li>
-						<li><a href="#">Feed Reader Testing</a></li>
-					</ul>
-				</div>
-			</nav>
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<ul class="nav navbar-nav">
+								<li><a href="#1">Resume</a></li>
+								<li><a href="#2">Arcade</a></li>
+								<li><a href="#3">Optimization</a></li>
+								<li><a href="#4">Neighborhood Map</a></li>
+								<li><a href="#5">Health Tracker</a></li>
+								<li><a href="#6">Feed Reader Testing</a></li>
+							</ul>
+						</div><!--container-fluid-->
+					</nav>
+				</div><!--col-->
+			</div><!--row-->
 
 		</header>
 
@@ -69,7 +73,7 @@
 				<div class="col-md-12">
 					<hr>
 				</div>
-			</div>
+			</div><!--row-->
 
 			<div class="row">
 				<div class="col-md-12">
@@ -79,7 +83,7 @@
 						<img src="images/suspension_bridge-small.jpg" alt="suspension bridge">
 					</picture>
 				</div>
-			</div>
+			</div><!--row-->
 
 			<section>
 				<div class="row">
@@ -92,11 +96,11 @@
 			<div class="row text-center">
 
 				<section>
-					<div class="col-md-4">
+					<div class="col-md-4" id="1">
 						<picture>
-							<source media="(min-width: 1200px)" class="center-block" srcset="images/resume-large_2x.jpg 2x, images/resume-large_1x.jpg 1x">
-							<source media="(min-width: 992px)" class="center-block" srcset="images/resume-medium.jpg">
-							<img class="center-block" src="images/resume-small.jpg" alt="job hunters in suits">
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/resume-large_2x.jpg 2x, images/resume-large_1x.jpg 1x" data-toggle="modal" data-target="#resume">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/resume-medium.jpg" data-toggle="modal" data-target="#resume">
+							<img class="center-block" src="images/resume-small.jpg" data-toggle="modal" data-target="#resume" alt="job hunters in suits" >
 						</picture>
 						<h3 class="text-uppercase">Resume</h3>
 						<p>https://github.com/lacyjpr/resume</p>
@@ -104,11 +108,11 @@
 				</section>
 
 				<section>
-					<div class="col-md-4">
+					<div class="col-md-4" id="2">
 						<picture>
-							<source media="(min-width: 1200px)" class="center-block" srcset="images/arcade-large_2x.jpg 2x, images/arcade-large_1x.jpg 1x">
-							<source media="(min-width: 992px)" class="center-block" srcset="images/arcade-medium.jpg">
-							<img class="center-block" src="images/arcade-small.jpg" alt="classic arcade game machine">
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/arcade-large_2x.jpg 2x, images/arcade-large_1x.jpg 1x" data-toggle="modal" data-target="#arcade">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/arcade-medium.jpg" data-toggle="modal" data-target="#arcade">
+							<img class="center-block" src="images/arcade-small.jpg" data-toggle="modal" data-target="#arcade" alt="classic arcade game machine">
 						</picture>
 						<h3 class="text-uppercase">Arcade Game</h3>
 						<p>https://github.com/lacyjpr/arcade</p>
@@ -116,27 +120,27 @@
 				</section>
 
 				<section>
-					<div class="col-md-4">
+					<div class="col-md-4" id="3">
 						<picture>
-							<source media="(min-width: 1200px)" class="center-block" srcset="images/optimization-large_2x.jpg 2x, images/optimization-large_1x.jpg 1x">
-							<source media="(min-width: 992px)" class="center-block" srcset="images/optimization-medium.jpg">
-							<img class="center-block" src="images/optimization-small.jpg" alt="man using a tablet device">
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/optimization-large_2x.jpg 2x, images/optimization-large_1x.jpg 1x" data-toggle="modal" data-target="#optimization">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/optimization-medium.jpg" data-toggle="modal" data-target="#optimization">
+							<img class="center-block" src="images/optimization-small.jpg" data-toggle="modal" data-target="#optimization" alt="man using a tablet device">
 						</picture>
 						<h3 class="text-uppercase">Website Optimization</h3>
 						<p>https://github.com/lacyjpr/optimization</p>
 					</div>
 				</section>
 
-			</div>
+			</div><!--row-->
 
 			<div class="row text-center">
 
 				<section>
-					<div class="col-md-4">
+					<div class="col-md-4" id="4">
 						<picture>
-							<source media="(min-width: 1200px)" class="center-block" srcset="images/neighborhood-large_2x.jpg 2x, images/neighborhood-large_1x.jpg 1x">
-							<source media="(min-width: 992px)" class="center-block" srcset="images/neighborhood-medium.jpg">
-							<img class="center-block" src="images/neighborhood-small.jpg" alt="city skyline">
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/neighborhood-large_2x.jpg 2x, images/neighborhood-large_1x.jpg 1x" data-toggle="modal" data-target="#neighborhood">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/neighborhood-medium.jpg" data-toggle="modal" data-target="#neighborhood">
+							<img class="center-block" src="images/neighborhood-small.jpg" data-toggle="modal" data-target="#neighborhood" alt="city skyline">
 						</picture>
 						<h3 class="text-uppercase">Neighborhood Map</h3>
 						<p>https://github.com/lacyjpr/neighborhood</p>
@@ -144,11 +148,11 @@
 				</section>
 
 				<section>
-					<div class="col-md-4">
+					<div class="col-md-4" id="5">
 						<picture>
-							<source media="(min-width: 1200px)" class="center-block" srcset="images/health-large_2x.jpg 2x, images/health-large_1x.jpg 1x">
-							<source media="(min-width: 992px)" class="center-block" srcset="images/health-medium.jpg">
-							<img class="center-block" src="images/health-small.jpg" alt="man on a bicycle">
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/health-large_2x.jpg 2x, images/health-large_1x.jpg 1x" data-toggle="modal" data-target="#health">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/health-medium.jpg" data-toggle="modal" data-target="#health">
+							<img class="center-block" src="images/health-small.jpg" data-toggle="modal" data-target="#health" alt="man on a bicycle">
 						</picture>
 						<h3 class="text-uppercase">Health Tracker</h3>
 						<p>https://github.com/lacyjpr/arcade</p>
@@ -156,20 +160,128 @@
 				</section>
 
 				<section>
-					<div class="col-md-4">
+					<div class="col-md-4" id="6">
 						<picture>
-							<source media="(min-width: 1200px)" class="center-block" srcset="images/testing-large_2x.jpg 2x, images/testing-large_1x.jpg 1x">
-							<source media="(min-width: 992px)" class="center-block" srcset="images/testing-medium.jpg">
-							<img class="center-block" src="images/testing-small.jpg" alt="woman with multiple computer monitors">
+							<source media="(min-width: 1200px)" class="center-block" srcset="images/testing-large_2x.jpg 2x, images/testing-large_1x.jpg 1x" data-toggle="modal" data-target="#testing">
+							<source media="(min-width: 992px)" class="center-block" srcset="images/testing-medium.jpg" data-toggle="modal" data-target="#testing">
+							<img class="center-block" src="images/testing-small.jpg" alt="woman with multiple computer monitors" data-toggle="modal" data-target="#testing">
 						</picture>
 						<h3 class="text-uppercase">Feed Reader Testing</h3>
 						<p>https://github.com/lacyjpr/testing</p>
 					</div>
 				</section>
 
-			</div>
+			</div><!--row-->
 
 		</div><!--container-->
+
+<!-- Modal -->
+		<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Resume</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/resume-small.jpg" alt="job hunters in suits">
+						From this project, I learned a lot about JavaScript and jQuery.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Modal -->
+		<div class="modal fade" id="arcade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel2">Arcade Game</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/arcade-small.jpg" alt="classic arcade game machine">
+						From this project, I learned a lot about Object-Oriented JavaScript and HTML5 Canvas.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Modal -->
+		<div class="modal fade" id="optimization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel3">Website Optimization</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/optimization-small.jpg" alt="man using a tablet device">
+						From this project, I learned a lot about website performance optimization and browser rendering optimization.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Modal -->
+		<div class="modal fade" id="neighborhood" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel4">Neighborhood Map</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/neighborhood-small.jpg" alt="city skyline">
+						From this project, I learned a lot about third-party APIs, AJAX, and JavaScript design patterns.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Modal -->
+		<div class="modal fade" id="health" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel5">Health Tracker</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/health-small.jpg" alt="man on a bicycle">
+						From this project, I learned a lot about Backbone.js.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Modal -->
+		<div class="modal fade" id="testing" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel6">Feed Reader Testing</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/testing-small.jpg" alt="woman with multiple computer monitors">
+						From this project, I learned a lot about JavaScrip testing and Test Driven Development.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 
 
