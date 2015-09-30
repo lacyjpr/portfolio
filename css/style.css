@@ -25,13 +25,10 @@ img {
 	display: block;
 }
 
-svg {
-	color: #F8981C;
-}
-
 svg#logo {
 	height: 11vw;
 	width: 11vw;
+	fill: #F8981C;
 }
 
 .navbar-nav > li > a {
