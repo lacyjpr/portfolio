@@ -29,10 +29,9 @@ img {
 	display: block;
 }
 
-svg#logo {
+.svglogo {
 	height: 11vw;
 	width: 11vw;
-	fill: #f8981c;
 }
 
 .navbar-nav > li > a {
