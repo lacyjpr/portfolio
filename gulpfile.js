@@ -39,27 +39,27 @@ gulp.task('images', function(){
 		svgoPlugins: [{removeViewBox: false}],
 		use: [pngquant()]
 	}))
-	.pipe(gulp.dest('dist/img'))
+	.pipe(gulp.dest('dist/images'))
 });
 
 // Compresses jpg files and outputs them to dist/img
 gulp.task('jpgImages', function(){
 	return gulp.src(paths.jpgImages)
 		.pipe(imageminJpegRecompress({loops: 3})())
-		.pipe(gulp.dest('images'));
+		.pipe(gulp.dest('dist/images'));
 });
 
 // Compresses png files and outputs them to dist/img
 gulp.task('pngImages', function(){
 	return gulp.src(paths.pngImages)
 		.pipe(imageminPngcrush({reduce: true})())
-		.pipe(gulp.dest('dist/img'));
+		.pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('svgImages', function(){
 	return gulp.src(paths.svgImages)
 		.pipe(svgmin())
-		.pipe(gulp.dest('images'));
+		.pipe(gulp.dest('dist/images'));
 });
 
 // Minifies HTML and outputs it to dist
@@ -75,6 +75,7 @@ gulp.task('watch', function(){
 	gulp.watch('src/css/*.css', ['styles']);
 	gulp.watch('src/img/*.jpg', ['jpgImages']);
 	gulp.watch('src/img/*.png', ['pngImages']);
+	gulp.watch('')
 	gulp.watch('src/*.html', ['content']);
 });
 
