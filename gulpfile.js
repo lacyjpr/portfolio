@@ -75,7 +75,7 @@ gulp.task('watch', function(){
 	gulp.watch('src/css/*.css', ['styles']);
 	gulp.watch('src/images/*.jpg', ['jpgImages']);
 	gulp.watch('src/images/*.png', ['pngImages']);
-	gulp.watch('src/images/*svg', ['svgImages']);
+	gulp.watch('src/images/*.svg', ['svgImages']);
 	gulp.watch('src/*.html', ['content']);
 });
 
