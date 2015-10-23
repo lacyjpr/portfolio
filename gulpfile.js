@@ -12,9 +12,9 @@ var paths = {
 	scripts: ['src/js/*.js'],
 	styles: ['src/css/*.css'],
 	images: ['src/img/*'],
-	jpgImages: ['images_src/*.jpg'],
-	pngImages: ['src/img/*.png'],
-	svgImages: ['images_src/*.svg'],
+	jpgImages: ['src/images/*.jpg'],
+	pngImages: ['src/images/*.png'],
+	svgImages: ['src/images/*.svg'],
 	content: ['src/*.html']
 }
 
@@ -39,7 +39,7 @@ gulp.task('images', function(){
 		svgoPlugins: [{removeViewBox: false}],
 		use: [pngquant()]
 	}))
-	.pipe(gulp.dest('dist/images'))
+	.pipe(gulp.dest('dist/images/'))
 });
 
 // Compresses jpg files and outputs them to dist/img
@@ -53,13 +53,13 @@ gulp.task('jpgImages', function(){
 gulp.task('pngImages', function(){
 	return gulp.src(paths.pngImages)
 		.pipe(imageminPngcrush({reduce: true})())
-		.pipe(gulp.dest('dist/images'));
+		.pipe(gulp.dest('dist/images/'));
 });
 
 gulp.task('svgImages', function(){
 	return gulp.src(paths.svgImages)
 		.pipe(svgmin())
-		.pipe(gulp.dest('dist/images'));
+		.pipe(gulp.dest('dist/images/'));
 });
 
 // Minifies HTML and outputs it to dist
@@ -73,11 +73,11 @@ gulp.task('content', function(){
 gulp.task('watch', function(){
 	gulp.watch('src/js/*.js', ['scripts']);
 	gulp.watch('src/css/*.css', ['styles']);
-	gulp.watch('src/img/*.jpg', ['jpgImages']);
-	gulp.watch('src/img/*.png', ['pngImages']);
-	gulp.watch('')
+	gulp.watch('src/images/*.jpg', ['jpgImages']);
+	gulp.watch('src/images/*.png', ['pngImages']);
+	gulp.watch('src/images/*svg', ['svgImages']);
 	gulp.watch('src/*.html', ['content']);
 });
 
-gulp.task('default', ['scripts', 'styles', 'jpgImages', 'pngImages', 'content', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'jpgImages', 'pngImages', 'svgImages', 'content', 'watch']);
 //gulp.task('default', ['scripts', 'styles', 'images', 'content', 'watch']);
