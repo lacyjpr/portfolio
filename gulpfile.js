@@ -5,8 +5,10 @@ var gulp = require('gulp'),
 	imageminPngcrush = require('imagemin-pngcrush'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
-	htmlmin = require('gulp-htmlmin');
-	svgmin = require('gulp-svgmin');
+	htmlmin = require('gulp-htmlmin'),
+	svgmin = require('gulp-svgmin'),
+	critical = require('critical'),
+	rename = require('gulp-rename')
 
 var paths = {
 	scripts: ['src/js/*.js'],
@@ -17,6 +19,26 @@ var paths = {
 	svgImages: ['src/images/*.svg'],
 	content: ['src/*.html']
 }
+
+gulp.task('copystyles', function(){
+	return gulp.src(['https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'])
+		pipe(rename ({
+			basename: "site"
+		}))
+		.pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('critical', ['copystyles'], function(){
+	critical.generateInline({
+		base: 'src/',
+		src: 'index.html',
+		styleTarget: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css',
+		htmlTarget: 'src/index.html',
+		width: 320,
+		height: 480,
+		minify: true
+	});
+});
 
 // Uglifies js files and outputs them to dist/js
 gulp.task('scripts', function(){
