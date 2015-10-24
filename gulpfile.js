@@ -21,18 +21,18 @@ var paths = {
 }
 
 gulp.task('copystyles', function(){
-	return gulp.src(['https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'])
+	return gulp.src(['src/css/bootstrap.min.css'])
 		pipe(rename ({
 			basename: "site"
 		}))
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('src/css'));
 });
 
 gulp.task('critical', ['copystyles'], function(){
 	critical.generateInline({
 		base: 'src/',
 		src: 'index.html',
-		styleTarget: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css',
+		styleTarget: 'bootstrap.min.css',
 		htmlTarget: 'src/index.html',
 		width: 320,
 		height: 480,
