@@ -47,17 +47,22 @@ hr,img{border:0}button,h1,h4{font-family:inherit;color:inherit}h4,ul{margin-bott
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </noscript>
 		<style>
-			.wf-loading * {
-				display: none;
-			}
 			a {
 				color: #747704;
 			}
 
-			body {
+			.wf-loading body {
 				font-family: "Lato", sans-serif;
 				color: #747704;
 				font-weight: 300;
+				visibility: hidden;
+			}
+			
+			.wf-active body {
+				font-family: "Lato", sans-serif;
+				color: #747704;
+				font-weight: 300;
+				visibility: visible;
 			}
 
 			header {
