@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 	htmlmin = require('gulp-htmlmin'),
 	svgmin = require('gulp-svgmin'),
 	critical = require('critical'),
-	rename = require('gulp-rename')
+	rename = require('gulp-rename'),
+	uncss = require('gulp-uncss')
 
 var paths = {
 	scripts: ['src/js/*.js'],
@@ -20,14 +21,25 @@ var paths = {
 	content: ['src/*.html']
 }
 
+gulp.task('un-css', function (){
+	return gulp.src('src/css/bootstrap.css')
+	.pipe(uncss({
+		html: ['src/index.html']
+	}))
+	.pipe(gulp.dest('dist/css'))
+});
+
+
+// copy styles for critical
 gulp.task('copystyles', function(){
 	return gulp.src(['src/css/bootstrap.min.css'])
-		pipe(rename ({
+		.pipe(rename ({
 			basename: "site"
 		}))
 		.pipe(gulp.dest('src/css'));
 });
 
+//inline critical css
 gulp.task('critical', ['copystyles'], function(){
 	critical.generateInline({
 		base: 'src/',
@@ -36,7 +48,7 @@ gulp.task('critical', ['copystyles'], function(){
 		htmlTarget: 'src/index.html',
 		width: 320,
 		height: 480,
-		minify: true
+		minify: false
 	});
 });
 
