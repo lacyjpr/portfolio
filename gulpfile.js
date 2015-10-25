@@ -99,7 +99,7 @@ gulp.task('svgImages', function(){
 // Minifies HTML and outputs it to dist
 gulp.task('content', function(){
 	return gulp.src(paths.content)
-		.pipe(htmlmin({collapseWhitespace: true, removeComments: true, minifyCSS: true, minifyJS: true}))
+		.pipe(htmlmin({collapseWhitespace: true, removeComments: true, minifyCSS: true, minifyJS: true,  removeOptionalTags: true}))
 		.pipe(gulp.dest('dist'));
 });
 
