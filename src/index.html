@@ -45,7 +45,21 @@
      		s.parentNode.insertBefore(wf, s);
    		})();
    		</script>-->
-		<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+
+<!--credit: https://discussions.udacity.com/t/optimize-css-delivery-of-google-font/15573/2 -->
+	<script>
+	var cb = function() {
+		var l = document.createElement('link'); l.rel = 'stylesheet';
+		l.href = 'http://fonts.googleapis.com/css?family=Lato:100,300';
+		var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+		webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(cb);
+	else window.addEventListener('load', cb);
+	</script>
+
+		<!--<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>-->
 		<!-- <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
 		<script>
 			WebFont.load({
