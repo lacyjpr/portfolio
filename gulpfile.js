@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 var paths = {
 	scripts: ['src/js/*.js'],
 	styles: ['src/css/*.css'],
-	images: ['src/img/*'],
+	images: ['src/images/*'],
 	jpgImages: ['src/images/*.jpg'],
 	pngImages: ['src/images/*.png'],
 	svgImages: ['src/images/*.svg'],
@@ -107,11 +107,12 @@ gulp.task('content', function(){
 gulp.task('watch', function(){
 	gulp.watch('src/js/*.js', ['scripts']);
 	gulp.watch('src/css/*.css', ['styles']);
-	gulp.watch('src/images/*.jpg', ['jpgImages']);
-	gulp.watch('src/images/*.png', ['pngImages']);
-	gulp.watch('src/images/*.svg', ['svgImages']);
+	gulp.watch('src/images/*', ['images']);
+	//gulp.watch('src/images/*.jpg', ['jpgImages']);
+	//gulp.watch('src/images/*.png', ['pngImages']);
+	//gulp.watch('src/images/*.svg', ['svgImages']);
 	gulp.watch('src/*.html', ['content']);
 });
 
-gulp.task('default', ['scripts', 'styles', 'jpgImages', 'pngImages', 'svgImages', 'content', 'watch']);
-//gulp.task('default', ['scripts', 'styles', 'images', 'content', 'watch']);
+//gulp.task('default', ['scripts', 'styles', 'jpgImages', 'pngImages', 'svgImages', 'content', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'images', 'content', 'watch']);
