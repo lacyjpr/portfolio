@@ -116,3 +116,4 @@ gulp.task('watch', function(){
 
 gulp.task('default', ['scripts', 'styles', 'jpgImages', 'pngImages', 'svgImages', 'content', 'watch']);
 //gulp.task('default', ['scripts', 'styles', 'images', 'content', 'watch']);
+//
