@@ -65,7 +65,7 @@ gulp.task('styles', function(){
 gulp.task('images', function(){
 	return gulp.src(paths.images)
 	.pipe(imagemin([
-		imageminJpegRecompress({progressive: true, max: 60, min: 50})
+		imageminJpegRecompress({progressive: true, max: 50, min: 40, method: smallfry})
 	], {verbose: true}))
 	.pipe(gulp.dest('dist/images/'))
 });
