@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	minifyCSS = require('gulp-minify-css'),
-	imagemin = require('gulp-imagemin'),
+	tinify = require('gulp-tinify')
 	htmlmin = require('gulp-htmlmin'),
 	svgmin = require('gulp-svgmin'),
 	critical = require('critical'),
@@ -63,9 +63,7 @@ gulp.task('styles', function(){
 
 gulp.task('images', function(){
 	return gulp.src(paths.images)
-	.pipe(imagemin([
-		imagemin.jpegtran({progressive: true})
-	]))
+	.pipe(tinify('idMQZa1hEHf2OYTiDVgpmn3snhlNBzmo'))
 	.pipe(gulp.dest('dist/images/'))
 });
 
